@@ -1,0 +1,618 @@
+{
+	"info": {
+		"_postman_id": "3d20032c-0895-4336-ba80-32a1da678d98",
+		"name": "SocialAppUrls",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31716172"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8001/register/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA3MDUxNzk3LCJpYXQiOjE3MDY4Nzg5OTcsImp0aSI6ImFhZTIzNTUxNTUxYjQ3YTA5MmFkNTlhMTk1NGQ2NDdmIiwidXNlcl9pZCI6OSwidXNlcm5hbWUiOm51bGx9.RYqsnyr8Juj8gbYVULpFI-X07_1BxQyov1SVITvCyPs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "root01@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Password@123",
+							"type": "text"
+						},
+						{
+							"key": "refresh",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcwODE3NDk5NywiaWF0IjoxNzA2ODc4OTk3LCJqdGkiOiJjZWU4MjE4ZjQ5YzM0ZWQxYTgyMjFlM2Y5ZTNmMzk2ZCIsInVzZXJfaWQiOjksInVzZXJuYW1lIjpudWxsfQ.YAnv4ZXTyG1iBiU45ymRPpYyyLk-Uqyc11qvCg3zZyA",
+							"type": "text"
+						},
+						{
+							"key": "request_to",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "user",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8001/friendrequest/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"friendrequest",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8001/login/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA3MDUyMTUxLCJpYXQiOjE3MDY4NzkzNTEsImp0aSI6IjYzZTZlZDQzYWY0OTQ4MmRhOGYyYjc0NzIxM2EzNzgwIiwidXNlcl9pZCI6MywidXNlcm5hbWUiOm51bGx9.2arXID4jgBR70Z1Zb0qO_4vpYpN5Yl35bsAVWUZ6W98",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "root2@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password@123",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "refresh",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcwODE3NTM1MSwiaWF0IjoxNzA2ODc5MzUxLCJqdGkiOiI2MGFlMzM2OGU0MmM0NjI3YjM3NjY0N2ZhNTdlYWQ5YyIsInVzZXJfaWQiOjMsInVzZXJuYW1lIjpudWxsfQ.hEx-a9YdcZVnbXs6k1pMT2OT7jWetU7p6lUejUh2tFQ",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8001/friendrequest/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"friendrequest",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8001/register/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA3MDUxNzk3LCJpYXQiOjE3MDY4Nzg5OTcsImp0aSI6ImFhZTIzNTUxNTUxYjQ3YTA5MmFkNTlhMTk1NGQ2NDdmIiwidXNlcl9pZCI6OSwidXNlcm5hbWUiOm51bGx9.RYqsnyr8Juj8gbYVULpFI-X07_1BxQyov1SVITvCyPs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "root01@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Password@123",
+							"type": "text"
+						},
+						{
+							"key": "refresh",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcwODE3NDk5NywiaWF0IjoxNzA2ODc4OTk3LCJqdGkiOiJjZWU4MjE4ZjQ5YzM0ZWQxYTgyMjFlM2Y5ZTNmMzk2ZCIsInVzZXJfaWQiOjksInVzZXJuYW1lIjpudWxsfQ.YAnv4ZXTyG1iBiU45ymRPpYyyLk-Uqyc11qvCg3zZyA",
+							"type": "text"
+						},
+						{
+							"key": "request_to",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "user",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8001/friendrequest/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"friendrequest",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8001/login/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA3MDUyMTUxLCJpYXQiOjE3MDY4NzkzNTEsImp0aSI6IjYzZTZlZDQzYWY0OTQ4MmRhOGYyYjc0NzIxM2EzNzgwIiwidXNlcl9pZCI6MywidXNlcm5hbWUiOm51bGx9.2arXID4jgBR70Z1Zb0qO_4vpYpN5Yl35bsAVWUZ6W98",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "root2@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password@123",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "refresh",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcwODE3NTM1MSwiaWF0IjoxNzA2ODc5MzUxLCJqdGkiOiI2MGFlMzM2OGU0MmM0NjI3YjM3NjY0N2ZhNTdlYWQ5YyIsInVzZXJfaWQiOjMsInVzZXJuYW1lIjpudWxsfQ.hEx-a9YdcZVnbXs6k1pMT2OT7jWetU7p6lUejUh2tFQ",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8001/friendrequest/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"friendrequest",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8001/login/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA3MDUyMTUxLCJpYXQiOjE3MDY4NzkzNTEsImp0aSI6IjYzZTZlZDQzYWY0OTQ4MmRhOGYyYjc0NzIxM2EzNzgwIiwidXNlcl9pZCI6MywidXNlcm5hbWUiOm51bGx9.2arXID4jgBR70Z1Zb0qO_4vpYpN5Yl35bsAVWUZ6W98",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "root2@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password@123",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "refresh",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcwODE3NTM1MSwiaWF0IjoxNzA2ODc5MzUxLCJqdGkiOiI2MGFlMzM2OGU0MmM0NjI3YjM3NjY0N2ZhNTdlYWQ5YyIsInVzZXJfaWQiOjMsInVzZXJuYW1lIjpudWxsfQ.hEx-a9YdcZVnbXs6k1pMT2OT7jWetU7p6lUejUh2tFQ",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "accepted",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8001/search/?search=rishabh@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"search",
+						""
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "virat@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8001/login/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA3MDUyMTUxLCJpYXQiOjE3MDY4NzkzNTEsImp0aSI6IjYzZTZlZDQzYWY0OTQ4MmRhOGYyYjc0NzIxM2EzNzgwIiwidXNlcl9pZCI6MywidXNlcm5hbWUiOm51bGx9.2arXID4jgBR70Z1Zb0qO_4vpYpN5Yl35bsAVWUZ6W98",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "root2@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password@123",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "refresh",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcwODE3NTM1MSwiaWF0IjoxNzA2ODc5MzUxLCJqdGkiOiI2MGFlMzM2OGU0MmM0NjI3YjM3NjY0N2ZhNTdlYWQ5YyIsInVzZXJfaWQiOjMsInVzZXJuYW1lIjpudWxsfQ.hEx-a9YdcZVnbXs6k1pMT2OT7jWetU7p6lUejUh2tFQ",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "rejected",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8001/status/6/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"status",
+						"6",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8001/login/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA3MDUyMTUxLCJpYXQiOjE3MDY4NzkzNTEsImp0aSI6IjYzZTZlZDQzYWY0OTQ4MmRhOGYyYjc0NzIxM2EzNzgwIiwidXNlcl9pZCI6MywidXNlcm5hbWUiOm51bGx9.2arXID4jgBR70Z1Zb0qO_4vpYpN5Yl35bsAVWUZ6W98",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "root2@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password@123",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "refresh",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcwODE3NTM1MSwiaWF0IjoxNzA2ODc5MzUxLCJqdGkiOiI2MGFlMzM2OGU0MmM0NjI3YjM3NjY0N2ZhNTdlYWQ5YyIsInVzZXJfaWQiOjMsInVzZXJuYW1lIjpudWxsfQ.hEx-a9YdcZVnbXs6k1pMT2OT7jWetU7p6lUejUh2tFQ",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "accepted",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8001/search/?search=var",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"search",
+						""
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "var"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8001/login/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA3MDUyMTUxLCJpYXQiOjE3MDY4NzkzNTEsImp0aSI6IjYzZTZlZDQzYWY0OTQ4MmRhOGYyYjc0NzIxM2EzNzgwIiwidXNlcl9pZCI6MywidXNlcm5hbWUiOm51bGx9.2arXID4jgBR70Z1Zb0qO_4vpYpN5Yl35bsAVWUZ6W98",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "root2@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password@123",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "refresh",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcwODE3NTM1MSwiaWF0IjoxNzA2ODc5MzUxLCJqdGkiOiI2MGFlMzM2OGU0MmM0NjI3YjM3NjY0N2ZhNTdlYWQ5YyIsInVzZXJfaWQiOjMsInVzZXJuYW1lIjpudWxsfQ.hEx-a9YdcZVnbXs6k1pMT2OT7jWetU7p6lUejUh2tFQ",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "accepted",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8001/search/?search=var",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"search",
+						""
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "var"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8001/login/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA3MDUyMTUxLCJpYXQiOjE3MDY4NzkzNTEsImp0aSI6IjYzZTZlZDQzYWY0OTQ4MmRhOGYyYjc0NzIxM2EzNzgwIiwidXNlcl9pZCI6MywidXNlcm5hbWUiOm51bGx9.2arXID4jgBR70Z1Zb0qO_4vpYpN5Yl35bsAVWUZ6W98",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "root2@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password@123",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "refresh",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcwODE3NTM1MSwiaWF0IjoxNzA2ODc5MzUxLCJqdGkiOiI2MGFlMzM2OGU0MmM0NjI3YjM3NjY0N2ZhNTdlYWQ5YyIsInVzZXJfaWQiOjMsInVzZXJuYW1lIjpudWxsfQ.hEx-a9YdcZVnbXs6k1pMT2OT7jWetU7p6lUejUh2tFQ",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "accepted",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8001/search/?search=var",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"search",
+						""
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "var"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8001/login/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzA3MDUyMTUxLCJpYXQiOjE3MDY4NzkzNTEsImp0aSI6IjYzZTZlZDQzYWY0OTQ4MmRhOGYyYjc0NzIxM2EzNzgwIiwidXNlcl9pZCI6MywidXNlcm5hbWUiOm51bGx9.2arXID4jgBR70Z1Zb0qO_4vpYpN5Yl35bsAVWUZ6W98",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "root2@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password@123",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "refresh",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcwODE3NTM1MSwiaWF0IjoxNzA2ODc5MzUxLCJqdGkiOiI2MGFlMzM2OGU0MmM0NjI3YjM3NjY0N2ZhNTdlYWQ5YyIsInVzZXJfaWQiOjMsInVzZXJuYW1lIjpudWxsfQ.hEx-a9YdcZVnbXs6k1pMT2OT7jWetU7p6lUejUh2tFQ",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "rejected",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8001/status/6/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8001",
+					"path": [
+						"status",
+						"6",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
